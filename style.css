@@ -1,0 +1,60 @@
+:root{--brand:#166534;--brand-dark:#14532d;--accent:#f59e0b;--ink:#1c2520;--muted:#6b7280;--bg:#ffffff;--bg-alt:#f1f7f2;--ok:#15803d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,"Times New Roman",serif;color:var(--ink);line-height:1.65;background:var(--bg)}
+.se-wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+header{background:var(--brand);color:#fff;position:sticky;top:0;z-index:50;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.se-nav{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:16px;flex-wrap:wrap}
+.se-logo{font-weight:800;font-size:1.15rem;color:#fff;text-decoration:none;letter-spacing:-.2px}
+.se-nav ul{display:flex;list-style:none;gap:18px;flex-wrap:wrap}
+.se-nav a{color:#e8f1f8;text-decoration:none;font-size:.95rem}
+.se-nav a:hover{color:#fff;text-decoration:underline}
+.se-call-btn{background:var(--accent);color:#1c2520;font-weight:700;padding:10px 18px;border-radius:8px;text-decoration:none;white-space:nowrap}
+.se-call-btn:hover{filter:brightness(1.05)}
+.se-hero{background:linear-gradient(135deg,var(--brand) 0%,var(--brand-dark) 100%);color:#fff;padding:48px 0 40px}
+.se-hero h1{font-size:2rem;line-height:1.25;margin-bottom:14px;letter-spacing:-.5px}
+.se-hero p.se-lead{font-size:1.1rem;max-width:760px;color:#dbe9f4}
+.se-hero .se-cta-row{margin-top:22px;display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.se-hero .se-sub{color:#b9d2e4;font-size:.9rem;margin-top:10px}
+.se-answer-box{background:#fff;border-left:5px solid var(--accent);border-radius:0 10px 10px 0;box-shadow:0 2px 10px rgba(0,0,0,.07);padding:20px 24px;margin:28px 0;color:var(--ink)}
+.se-answer-box strong{color:var(--brand-dark)}
+main{padding:8px 0 40px}
+section{margin:36px 0}
+h2{font-size:1.45rem;color:var(--brand-dark);margin-bottom:12px;letter-spacing:-.3px}
+h3{font-size:1.12rem;color:var(--ink);margin:18px 0 8px}
+p{margin-bottom:12px}
+ul.se-checks{list-style:none;margin:10px 0}
+ul.se-checks li{padding-left:26px;position:relative;margin-bottom:8px}
+ul.se-checks li:before{content:"✓";position:absolute;left:0;color:var(--ok);font-weight:800}
+table{width:100%;border-collapse:collapse;margin:16px 0;font-size:.97rem}
+caption{caption-side:top;text-align:left;font-weight:700;color:var(--brand-dark);padding-bottom:8px}
+th{background:var(--brand);color:#fff;text-align:left;padding:10px 12px;font-size:.92rem}
+td{padding:10px 12px;border-bottom:1px solid #e5e7eb}
+tbody tr:nth-child(even){background:var(--bg-alt)}
+.se-note{font-size:.85rem;color:var(--muted)}
+.se-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:14px}
+.se-card{background:var(--bg-alt);border-radius:10px;padding:20px}
+.se-card h3{margin-top:0;color:var(--brand-dark)}
+.se-faq details{border:1px solid #e5e7eb;border-radius:8px;margin-bottom:10px;background:#fff}
+.se-faq summary{padding:14px 16px;font-weight:600;cursor:pointer;color:var(--brand-dark)}
+.se-faq div{padding:0 16px 14px;color:var(--ink)}
+.se-cta-band{background:var(--brand-dark);color:#fff;border-radius:12px;padding:30px;text-align:center;margin:40px 0}
+.se-cta-band h2{color:#fff}
+.se-cta-band p{color:#cfe2ef}
+footer{background:#10222e;color:#9fb6c4;padding:34px 0;font-size:.92rem}
+footer .se-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:24px}
+footer h4{color:#fff;margin-bottom:10px;font-size:1rem}
+footer a{color:#9fb6c4;text-decoration:none;display:block;margin-bottom:6px}
+footer a:hover{color:#fff}
+footer .se-nap{line-height:1.8}
+.se-copyright{margin-top:24px;border-top:1px solid #1d3a4c;padding-top:16px;font-size:.85rem}
+.se-updated{display:inline-block;background:#eef6ee;color:var(--ok);font-size:.8rem;font-weight:700;padding:3px 10px;border-radius:99px;margin-bottom:14px}
+.se-sticky-call{display:none}
+@media(max-width:720px){
+ .se-hero h1{font-size:1.5rem}
+ .se-nav ul{display:none}
+ .se-sticky-call{display:block;position:fixed;bottom:0;left:0;right:0;background:var(--accent);text-align:center;padding:14px;font-weight:800;color:#1c2520;text-decoration:none;z-index:99;box-shadow:0 -2px 8px rgba(0,0,0,.2)}
+ body{padding-bottom:52px}
+}
+
+h1,h2,h3{font-family:-apple-system,"Segoe UI",Arial,sans-serif}
+tbody tr:nth-child(even){background:transparent}td{border-bottom:2px solid #eceff1}
